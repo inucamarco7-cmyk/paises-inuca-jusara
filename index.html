@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 - Periódicos del Mundo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+       
+        .header-card {
+            background-color: #cedb19;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 5px solid #2c3150;
+        }
+
+        .header-card h1 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            font-size: 14px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+        }
+
+        .info-item strong {
+            color: #495057;
+        }
+
+       
+        .main-title {
+            text-align: center;
+            color: #1a252f;
+            margin: 20px 0 30px 0;
+            font-size: 28px;
+        }
+
+       
+        .table-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            overflow-x: auto;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 3px;
+            border: 1px solid #d1d5db;
+        }
+
+        td {
+            border: 1px solid #e5e7eb;
+            padding: 10px 14px;
+            vertical-align: middle;
+            font-size: 15px;
+            background-color: #ffffff;
+        }
+
+        .pais {
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            width: 25%;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        
+        .pais::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .pais span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .nombre-periodico {
+            font-weight: 600;
+            color: #374151;
+            width: 35%;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: underline;
+            word-break: break-all;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+        }
+
+        .espana .pais {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl3cm7wiJW5bUkDZboPL7yGv99OXniyVQ6oyWAoXs3claAnnRGedx2-ICE&s=10');
+        }
+        .ecuador .pais {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original');
+        }
+        .colombia .pais {
+            background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/1280px-Flag_of_Colombia.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail');
+        }
+        .argentina .pais {
+            background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/250px-Flag_of_Argentina.svg.png?utm_source=es.wikipedia.org&utm_campaign=parser&utm_content=thumbnail');
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header-card">
+            <h1>Actividad 2 - Paises y Periodicos</h1>
+            <div class="info-grid">
+                <div class="info-item"><strong>Integrantes:</strong>Marco Inuca-Coque Jusara-Alex Morales-Martin Benabidez</div>
+                <div class="info-item"><strong>Curso / Grupo:</strong> 3.° B / Informatica</div>
+                <div class="info-item"><strong>Fecha:</strong> 19 de Octubre 2026</div>
+                <div class="info-item"><strong>Asignatura:</strong> Diseño Web</div>
+            </div>
+        </div>
+
+        <h2 class="main-title">PAÍSES DEL MUNDO</h2>
+
+        <div class="table-card espana">
+            <table>
+                <tr>
+                    <td class="pais" rowspan="3"><span>ESPAÑA</span></td>
+                    <td class="nombre-periodico">El País digital</td>
+                    <td><a href="https://www.elpais.es" target="_blank">www.elpais.es</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">ABC</td>
+                    <td><a href="https://www.abc.es" target="_blank">www.abc.es</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">El Mundo</td>
+                    <td><a href="https://www.elmundo.es" target="_blank">www.elmundo.es</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-card ecuador">
+            <table>
+                <tr>
+                    <td class="pais" rowspan="3"><span>ECUADOR</span></td>
+                    <td class="nombre-periodico">El Comercio</td>
+                    <td><a href="https://www.elcomercio.com" target="_blank">www.elcomercio.com</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">El Universo</td>
+                    <td><a href="https://www.eluniverso.com" target="_blank">www.eluniverso.com</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">El Telégrafo</td>
+                    <td><a href="https://www.eltelegrafo.com.ec" target="_blank">www.eltelegrafo.com.ec</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Colombia -->
+        <div class="table-card colombia">
+            <table>
+                <tr>
+                    <td class="pais" rowspan="3"><span>COLOMBIA</span></td>
+                    <td class="nombre-periodico">El Tiempo</td>
+                    <td><a href="https://www.eltiempo.com" target="_blank">www.eltiempo.com</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">El Espectador</td>
+                    <td><a href="https://www.elespectador.com" target="_blank">www.elespectador.com</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">El Colombiano</td>
+                    <td><a href="https://www.elcolombiano.com" target="_blank">www.elcolombiano.com</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Argentina -->
+        <div class="table-card argentina">
+            <table>
+                <tr>
+                    <td class="pais" rowspan="3"><span>ARGENTINA</span></td>
+                    <td class="nombre-periodico">Clarín</td>
+                    <td><a href="https://www.clarin.com" target="_blank">www.clarin.com</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">La Nación</td>
+                    <td><a href="https://www.lanacion.com.ar" target="_blank">www.lanacion.com.ar</a></td>
+                </tr>
+                <tr>
+                    <td class="nombre-periodico">Página 12</td>
+                    <td><a href="https://www.pagina12.com.ar" target="_blank">www.pagina12.com.ar</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
